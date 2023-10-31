@@ -25,9 +25,9 @@ exports.update_user = (req, res) => {
     .then(function (userdata) {
       res.render("update_user", {
         user: userdata.data,
-      })
+      });
     })
-    .catch(err => {
+    .catch((err) => {
       res.send(err);
-    })
+    });
 };
